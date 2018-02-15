@@ -29,7 +29,7 @@ Enemy createRandomEnemy() //ejercicio 4
 	return e1;
 }
 
-int getEnemyTypeString(EnemyType e1) //ejercicio 5
+string getEnemyTypeString(EnemyType e1) //ejercicio 5
 {
-	string boi;
+	
 }
