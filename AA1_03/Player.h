@@ -1,8 +1,4 @@
 #pragma once
-#include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
 
 struct Vec2
 {
@@ -16,7 +12,7 @@ struct Player
 	Vec2 position;
 	int score;
 
-	Player() : position({ 0, 0 }), score() {};
+	Player() : position({ 0 , 0 }), score() {};
 	Player(Vec2 pos) : position(pos), score(0) {};
 
 	inline void printScore() {

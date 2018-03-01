@@ -1,12 +1,9 @@
 ﻿#pragma once
-#include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
 
 const int NUM_ROWS = 10;
 const int NUM_COLUMNS = 10;
 
+//1
 enum class Movement { UP, DOWN, LEFT, RIGHT };
 
 enum CharName { NONE, PLAYER, STONE, COIN };
