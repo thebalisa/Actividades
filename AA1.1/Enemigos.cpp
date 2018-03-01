@@ -1,7 +1,7 @@
 #include <ctime>
 #include <string>
 #include <iostream>
-using namespace std;
+/*using namespace std;
 
 string enemyName[5] = { "Alucard", "Mallus", "Albedo", "Azzer", "Morg" };
 
@@ -32,4 +32,4 @@ Enemy createRandomEnemy() //ejercicio 4
 string getEnemyTypeString(EnemyType e1) //ejercicio 5
 {
 	
-}
+}*/

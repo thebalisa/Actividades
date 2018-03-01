@@ -1,4 +1,4 @@
-#include <ctime>
+/*#include <ctime>
 #include <string>
 #include <iostream>
 
@@ -43,4 +43,4 @@ bool checkMovement(playerInfo player, Movement)
 	default:
 		break;
 	}
-}
+}*/
