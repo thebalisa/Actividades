@@ -27,21 +27,17 @@ int main(int, char *[])
 		Movement move;
 		switch (c)
 		{
+		case 'W':
 		case 'w': move = Movement::UP;
 			break;
-		case 's': move = Movement::DOWN;
-			break;
+		case 'A':
 		case 'a': move = Movement::LEFT;
 			break;
+		case 'S':
+		case 's': move = Movement::DOWN;
+			break;
+		case 'D':
 		case 'd': move = Movement::RIGHT;
-			break;
-		case 'W': move = Movement::UP;
-			break;
-		case 'S': move = Movement::DOWN;
-			break;
-		case 'A': move = Movement::LEFT;
-			break;
-		case 'D': move = Movement::RIGHT;
 			break;
 		default:
 			return 0;

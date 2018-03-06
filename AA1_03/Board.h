@@ -59,8 +59,8 @@ struct Board
 	}
 
 
-	//5 Una funci�n checkMovement que recibe dos par�metros : la posici�n del jugador en el tablero y el tipo de Movement 
-	// que se desea hacer.Devuelve true si el movimiento es v�lido y false en caso contrario.
+	//5 Una función checkMovement que recibe dos parámetros : la posición del jugador en el tablero y el tipo de Movement 
+	// que se desea hacer.Devuelve true si el movimiento es válido y false en caso contrario.
 	bool checkMovement(Vec2 pos, Movement mov)
 	{
 		switch (mov)
@@ -87,8 +87,8 @@ struct Board
 	}
 
 
-	//8	Una funci�n existsCoin que devuelve true si hay una moneda en la siguiene casilla a la 
-	//que deber�a moverse el jugador seg�n el tipo de Movement que se la pasa c�mo par�metro y false en caso contrario.
+	//8	Una función existsCoin que devuelve true si hay una moneda en la siguiene casilla a la 
+	//que debería moverse el jugador según el tipo de Movement que se la pasa como parámetro y false en caso contrario.
 	bool existCoin(Vec2 pos, Movement mov) {
 		switch (mov)
 		{
@@ -104,13 +104,13 @@ struct Board
 	}
 
 
-	//9 Una funci�n movePlayer que mueve al jugador a la siguiente casilla de d�nde se encuentra 
-	//dependiendo del tipo de Movement  que se le pasa c�mo par�metro. 
+	//9 Una función movePlayer que mueve al jugador a la siguiente casilla de donde se encuentra 
+	//dependiendo del tipo de Movement  que se le pasa como parámetro. 
 	void movePlayer(Vec2 &pos_, Movement move)
 	{
 		Vec2 newPos = pos_;
 
-		//calcular cual seria la nueva posicion
+		//calcular cual seria la nueva posición
 		switch (move)
 		{
 		case Movement::LEFT: newPos = { pos_.x, pos_.y - 1 };
@@ -125,11 +125,11 @@ struct Board
 
 		board[pos_.x][pos_.y] = g_CharCode[CharName::NONE];
 		board[newPos.x][newPos.y] = g_CharCode[CharName::PLAYER];
-		pos_ = newPos;  //actualiza la posicion del jugador
+		pos_ = newPos;  //actualiza la posición del jugador
 
 	}
 
-	//10  Una funci�n gameOver que verifica si en el tablero no quedan monedas
+	//10  Una función gameOver que verifica si en el tablero no quedan monedas
 	bool gameOver() {
 		int count{ 0 };
 		for (int i = 1; i<NUM_ROWS; i++)
