@@ -2,21 +2,21 @@
 
 DynArray::DynArray()
 {
-	int * defaultArray = new int[DYN_ARRAY_DEFAULT_SIZE];
+	data = new int[DYN_ARRAY_DEFAULT_SIZE];
 	DynArray::m_capacity = DYN_ARRAY_DEFAULT_SIZE;
 	DynArray::m_size = 0;
 }
 
 DynArray::DynArray(size_t size)
 {
-	int * definedArray = new int[size];
+	data = new int[size];
 	DynArray::m_capacity = size;
 	DynArray::m_size = 0;
 }
 
 DynArray::DynArray(size_t size, const int & value)
 {
-	int * initArray = new int[size];
+	data = new int[size];
 	for (int i = 0; i < size; i++)
 	{
 		initArray[i] = value;
