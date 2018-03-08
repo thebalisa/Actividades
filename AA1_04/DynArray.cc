@@ -19,7 +19,7 @@ DynArray::DynArray(size_t size, const int & value)
 	data = new int[size];
 	for (int i = 0; i < size; i++)
 	{
-		initArray[i] = value;
+		data[i] = value;
 	}
 	DynArray::m_size = size;
 	DynArray::m_capacity = size;
