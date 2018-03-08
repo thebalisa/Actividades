@@ -2,25 +2,32 @@
 
 DynArray::DynArray()
 {
-	int* defaultArray = new int[DYN_ARRAY_DEFAULT_SIZE];
-	DynArray::m_capacity = 8;
+	int * defaultArray = new int[DYN_ARRAY_DEFAULT_SIZE];
+	DynArray::m_capacity = DYN_ARRAY_DEFAULT_SIZE;
 	DynArray::m_size = 0;
 }
 
 DynArray::DynArray(size_t size)
 {
-	int * definedArray = new int[10];
-	DynArray::m_capacity = 10;
+	int * definedArray = new int[size];
+	DynArray::m_capacity = size;
 	DynArray::m_size = 0;
 }
 
 DynArray::DynArray(size_t size, const int & value)
 {
-
+	int * initArray = new int[size];
+	for (int i = 0; i < size; i++)
+	{
+		initArray[i] = value;
+	}
+	DynArray::m_size = size;
+	DynArray::m_capacity = size;
 }
 
 int * DynArray::begin()
 {
+
 	return nullptr;
 }
 
