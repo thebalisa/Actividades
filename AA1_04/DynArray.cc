@@ -28,24 +28,28 @@ DynArray::DynArray(size_t size, const int & value)
 int * DynArray::begin()
 {
 
-	return nullptr;
+	return &data[0];
 }
 
 int * DynArray::end()
 {
-	return nullptr;
+	return &data[m_size-1];
 }
 
 void DynArray::resize(size_t n)
 {
+	data = new int[n];
+	DynArray::m_size = n;
 }
 
 void DynArray::reserve(size_t n)
 {
+	DynArray::m_capacity = n;
 }
 
 void DynArray::shrink()
 {
+
 }
 
 bool DynArray::empty()
